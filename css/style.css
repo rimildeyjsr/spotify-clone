@@ -4,3 +4,30 @@ html,body {
     margin:0;
     padding: 0;
 }
+
+.header {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    padding: 2.25rem 2.5vw;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 16rem;
+}
+
+.header .logo svg {
+    fill: #1e3264;
+    display: block;
+}
