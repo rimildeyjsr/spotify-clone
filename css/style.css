@@ -18,7 +18,7 @@ html,body {
     justify-content: space-between;
     width: 100%;
     overflow: hidden;
-    padding: 2.25rem 2.5vw;
+    padding: 1.25rem 2.5vw;
     top: 0;
     z-index: 10;
 }
@@ -31,3 +31,63 @@ html,body {
     fill: #1e3264;
     display: block;
 }
+
+.login-div{
+    color: #1e3264;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5%;
+    margin-top: 0.5%;
+}
+
+.login-img {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 1.5625rem;
+    position: relative;
+    box-shadow: 0 0 0 2px #1e3264;
+    overflow: hidden;
+}
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.login-text {
+    text-align: right;
+    margin-right: .625rem;
+}
+
+.user-name {
+    font-size: 1.125rem;
+    display: block;
+    padding-bottom: .125rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.share-logout {
+    color: #1e3264;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .95rem;
+    margin-top: -.1875rem;
+    text-align: right;
+}
+
+.share {
+    display: inline-block;
+    text-align: right;
+}
+
+.logout {
+    display: inline-block;
+}
+
