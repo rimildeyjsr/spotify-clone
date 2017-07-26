@@ -159,3 +159,118 @@ section .section-header h2 {
     text-align: center;
     margin: 0 auto;
 }
+
+.selection {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto .9375rem;
+}
+
+.selection ul {
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+}
+
+.selection ul li {
+    margin: 0 2vw;
+    display: inline-block;
+    text-align: center;
+}
+
+.top-item {
+    margin: 3.125rem auto 9.375rem;
+    max-width: 56.25rem;
+    position: relative;
+    display: block;
+}
+
+#lifetime-top-artist .item-art {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-left: 50%;
+    width: 50%;
+    display: block;
+}
+
+#lifetime-top-artist .item-art img {
+    width: 100%;
+}
+
+#lifetime-top-artist .item-details {
+    left: 0;
+    right: inherit;
+    text-align: left;
+    position: absolute;
+    bottom: 8%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+}
+
+#lifetime-top-artist .item-details h2 {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin: 0 0 3% 3%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 1.125rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    background-color: rgba(30, 50, 100, .25);
+    padding: .3125rem 1.5625rem;
+    display: inline-block;
+    width: auto;
+}
+
+#lifetime-top-artist .item-details h3 {
+    font-size: 2.8125rem;
+    width: auto;
+    margin: 0;
+    color: #fff;
+    font-size: 1.875rem;
+    background-color: #1e3264;
+    padding: .625rem 2.1875rem;
+    width: 100%;
+    text-align: left;
+}
+
+#lifetime-top-artist .item-details p {
+    margin: -.625rem 0 0 6%;
+    font-size: 1.125rem;
+    color: #1e3264;
+    background-color: #fff;
+    padding: .3125rem 1.5625rem;
+    display: inline-block;
+}
+
+#lifetime-top-artist .item-bg {
+    opacity: 0.08;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    position: absolute;
+    width: 92.5%;
+    background-color: #1e3264;
+    bottom: -3.5vh;
+    left: 3.75%;
+    z-index: -1;
+    -webkit-transform: scaleX(1);
+}
+
+.top-item .item-bg:before {
+    content: '';
+    float: left;
+    padding-bottom: 48.64864865%;
+    transition: padding-bottom .5s ease 0s;
+}
+
+.top-item .item-art:before, .top-item .item-bg:before {
+    float: left;
+    transition: padding-bottom .5s ease 0s;
+    content: '';
+}
