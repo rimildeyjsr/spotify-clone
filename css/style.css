@@ -229,14 +229,16 @@ section .section-header h2 {
 
 #lifetime-top-artist .item-details h3 {
     font-size: 2.8125rem;
-    width: auto;
-    margin: 0;
+    margin: 0 auto 0 0;
     color: #fff;
     font-size: 1.875rem;
     background-color: #1e3264;
     padding: .625rem 2.1875rem;
     width: 100%;
     text-align: left;
+    max-width: 55%;
+    min-width: 55%;
+    line-height: 1.1;
 }
 
 #lifetime-top-artist .item-details p {
