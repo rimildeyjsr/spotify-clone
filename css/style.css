@@ -157,7 +157,7 @@ section .section-header h1 {
 section .section-header h2 {
     max-width: 85%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #1e3264;
     font-style: normal;
     text-align: center;
@@ -329,4 +329,60 @@ section .section-header h2 {
     background-color: #fff;
     padding: .3125rem 1.5625rem;
     display: inline-block;
+}
+
+.trend-time {
+    margin: 0 auto 11.875rem;
+    max-width: 61.25rem;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.trends-hour,.trends-min {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 45%;
+    flex: 0 1 45%;
+    text-align: center;
+}
+
+.trends-hour h1,.trends-min h1 {
+    font-size: 5rem;
+    color: #1e3264;
+    line-height: 1em;
+    margin: 0;
+    letter-spacing: -.03em;
+}
+
+.trends-hour h1 span, .trends-min h1 span {
+    margin: 0;
+    line-height: 1em;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -.03em;
+}
+
+.trends-hour p, .trends-min p {
+    line-height: 1em;
+    font-size: 1rem;
+    color: #1e3264;
+    font-weight: 600;
+}
+
+.divider {
+    height: 8.125rem;
+    width: 2px;
+    margin: 0;
+    background: #1e3264;
 }
