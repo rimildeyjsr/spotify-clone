@@ -386,3 +386,70 @@ section .section-header h2 {
     margin: 0;
     background: #1e3264;
 }
+
+.component-header {
+    margin: 0 auto 6.25rem;
+    text-align: center;
+}
+
+.component-header h1 {
+    margin-bottom: .9375rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    line-height: 1;
+    color: #1e3264;
+    font-style: normal;
+}
+
+.component-header h2 {
+    font-size: 1rem;
+    margin-top: -5px;
+    color: #1e3264;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#trends .track-container {
+    max-width: 100%;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+#trends .content-container {
+    margin: 0 auto 7.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.track-feature-title {
+    font-size: 3rem;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: -.01em;
+    margin: 0 .625rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.track-feature-title .highlight {
+    color: #1e3264;
+}
