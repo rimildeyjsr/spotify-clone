@@ -116,9 +116,13 @@ html,body {
     font-size: .75rem;
 }
 
-#main {
+#main,#trends{
     padding-top: 9.375rem;
-    margin: 0 7.5vw 14.375rem;
+    margin: 0 7.5vw 10rem;
+}
+
+.recent {
+    display: none;
 }
 
 section .section-header {
