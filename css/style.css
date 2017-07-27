@@ -189,15 +189,22 @@ section .section-header h2 {
     display: block;
 }
 
-#lifetime-top-artist .item-art {
+#lifetime-top-artist .item-art,#lifetime-top-track .item-art {
     transform: matrix(1, 0, 0, 1, 0, 0);
-    margin-left: 50%;
     width: 50%;
     display: block;
 }
 
-#lifetime-top-artist .item-art img {
+#lifetime-top-artist .item-art img,#lifetime-top-track .item-art img {
     width: 100%;
+}
+
+#lifetime-top-artist .item-art {
+    margin-left: 50%;
+}
+
+#lifetime-top-track .item-art {
+    margin: 0;
 }
 
 #lifetime-top-artist .item-details {
@@ -228,10 +235,9 @@ section .section-header h2 {
 }
 
 #lifetime-top-artist .item-details h3 {
-    font-size: 2.8125rem;
+    font-size: 3.5rem;
     margin: 0 auto 0 0;
     color: #fff;
-    font-size: 1.875rem;
     background-color: #1e3264;
     padding: .625rem 2.1875rem;
     width: 100%;
@@ -250,7 +256,7 @@ section .section-header h2 {
     display: inline-block;
 }
 
-#lifetime-top-artist .item-bg {
+#lifetime-top-artist .item-bg,#lifetime-top-track .item-bg {
     opacity: 0.08;
     transform: matrix(1, 0, 0, 1, 0, 0);
     -webkit-transform-origin: 100% 0;
@@ -275,4 +281,48 @@ section .section-header h2 {
     float: left;
     transition: padding-bottom .5s ease 0s;
     content: '';
+}
+
+#lifetime-top-track .item-details {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    width: auto;
+    text-align: right;
+    min-width: 100%;
+    height: auto;
+}
+
+#lifetime-top-track .item-details h2 {
+    margin: 0 3% 3% 0;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: rgba(30,50,100,.25);
+    padding: .3125rem 1.5625rem;
+    display: inline-block;
+    width: auto;
+}
+
+#lifetime-top-track .item-details h3 {
+    max-width: 55%;
+    min-width: 55%;
+    line-height: 1.1;
+    font-size: 3.5rem;
+    margin: 0 0 0 auto;
+    width: auto;
+    color: #fff;
+    background-color: #1e3264;
+    padding: .625rem 2.1875rem;
+    text-align: left;
+}
+
+#lifetime-top-track .item-details p {
+    font-size: 1.125rem;
+    margin: -.625rem 6% 0 0;
+    color: #1e3264;
+    background-color: #fff;
+    padding: .3125rem 1.5625rem;
+    display: inline-block;
 }
