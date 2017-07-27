@@ -547,7 +547,7 @@ section .section-header h2 {
 
 .genre-title {
     color: #000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 5px;
@@ -578,4 +578,46 @@ section .section-header h2 {
 .genre-percent {
     padding-left: 10px;
     color: #000;
+}
+
+.diversity {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.diversity-item {
+    color: #000;
+    text-align: center;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.diversity-header {
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    z-index: 2;
+    line-height: 1;
+    max-width: 100%;
+    margin-bottom: .9375rem;
+}
+
+.diversity-subhead {
+    max-width: 65%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
