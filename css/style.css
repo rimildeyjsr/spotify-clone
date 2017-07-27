@@ -438,7 +438,7 @@ section .section-header h2 {
     -webkit-box-direction: normal;
 }
 
-.track-feature-title {
+.track-feature-title,.track-feature-subtitle {
     font-size: 3rem;
     color: #000;
     font-style: normal;
@@ -450,6 +450,52 @@ section .section-header h2 {
     text-align: center;
 }
 
+.track-feature-subtitle {
+    font-size: 1.5rem;
+    display: block;
+}
+
 .track-feature-title .highlight {
     color: #1e3264;
+}
+
+.track-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    margin: 3.5625rem 0;
+}
+
+.track-col {
+    margin: 0 1.5625rem;
+    width: 15.625rem;
+}
+
+.album-placeholder img {
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-color: #000;
+    background-position: center center;
+}
+
+.subtitle {
+    font-size: 0.6rem;
+    color: #1e3264;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .625rem;
+    margin-top: 2.1875rem;
+    letter-spacing: .03125rem;
+    padding: 0 2.5em;
 }
