@@ -621,3 +621,119 @@ section .section-header h2 {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
+
+.insight-wrapper {
+    max-width: 70rem;
+    margin-bottom: 9.375rem;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.insight-wrapper .insight>div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 0 8.125rem;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.insight-wrapper .insight .insight-card {
+    width: 70%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+}
+
+.insight-wrapper .insight .insight-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.insight-wrapper .insight .insight-info {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 2.1875rem 0 0 3em;
+    z-index: 1;
+}
+
+.insight-wrapper .insight .insight-info h2 {
+    font-size: 1.125rem;
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.insight-wrapper .insight .insight-info h1 {
+    font-size: 3.75rem;
+    margin: 0;
+    color: #000;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    letter-spacing: -.03em;
+}
+
+.insight-wrapper .insight .insight-info p {
+    font-size: 1rem;
+    max-width: 18.75rem;
+    margin: .625rem 0 0 3.5vw;
+    color: #000;
+}
+
+.insight-wrapper .insight-end {
+    margin-top: -6.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 6.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.insight-wrapper .insight-end h3 {
+    font-size: 1rem;
+    max-width: 47.5rem;
+    color: #1e3264;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.insight-wrapper .insight-end h4 {
+    font-size: 1rem;
+    max-width: 47.5rem;
+    color: #1e3264;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
