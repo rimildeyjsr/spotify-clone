@@ -121,6 +121,12 @@ html,body {
     margin: 0 7.5vw 10rem;
 }
 
+#contact, #insights, #main, #trends {
+    position: relative;
+    overflow: hidden;
+    max-width: 85vw;
+}
+
 .recent {
     display: none;
 }
@@ -880,3 +886,68 @@ section .section-header h2 {
     transition: all 350ms cubic-bezier(.215,.61,.355,1);
 }
 
+#contact {
+    margin: 0 7.5vw;
+    height: 80vh;
+    min-height: 22.5rem;
+}
+
+
+.button-container, .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.contact-container {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 85vh;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.contact-header {
+    font-size: 3.75rem;
+    max-width: 50rem;
+    font-weight: 700;
+    color: #1e3264;
+    text-align: center;
+    line-height: 1.1;
+    font-style: normal;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    max-width: 42.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #1e3264;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 25px;
+    display: flex;
+}
+
+.button-rounded.outline-dark {
+    border: 2px solid #1e3264;
+    color: #1e3264;
+    background-color: transparent;
+}
+
+.button-container .button-rounded {
+    margin: .3125rem .625rem;
+}
