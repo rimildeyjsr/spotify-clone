@@ -735,5 +735,148 @@ section .section-header h2 {
     margin-top: 0;
 }
 
+.playlist {
+    padding: 3.5vh 0;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    max-width: 56.25rem;
+    position: relative;
+    width: 100%;
+    margin: 6.25rem auto;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
+.playlist .playlist-bg {
+    top: 0;
+    left: 15%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.5);
+    z-index: -1;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.playlist .playlist-left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 40%;
+    flex: 0 1 40%;
+}
+
+.playlist .playlist-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 23.125rem;
+}
+
+.playlist .playlist-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 60%;
+    flex: 0 1 60%;
+    padding: 0 2.5vw;
+}
+
+.playlist h1 {
+    text-align: left;
+    font-size: 3.75rem;
+    color: #1e3264;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 auto;
+    font-style: normal;
+    letter-spacing: -.03em;
+}
+
+.playlist p {
+    text-align: left;
+    font-size: 1.125rem;
+    color: #1e3264;
+}
+
+.playlist .playlist-buttons {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: flex;
+    margin: 2.5vh 0 0;
+}
+
+.playlist .playlist-buttons .button-rounded {
+    margin: 0 1vw 0 0;
+}
+
+.button-rounded.thin {
+    padding: 0 1.25rem;
+}
+
+.button-rounded.inverted {
+    background: #1e3264;
+}
+
+.button-rounded {
+    font-size: .875rem;
+    height: 2.8125rem;
+    border-radius: 1.5625rem;
+    color: #1e3264;
+    letter-spacing: .0625rem;
+    background: #fff;
+    display: inline-block;
+    padding: 0 2.1875rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.button-rounded.inverted .text {
+    color: #fff;
+}
+
+.button-rounded .text, .button-rounded .text-roll {
+    line-height: 2.625rem;
+}
+
+.button-rounded .text {
+   position: absolute;
+}
+
+.button-rounded .text, .button-rounded .text-roll {
+    line-height: 2.1875rem;
+    display: inline-block;
+    transition: all 350ms cubic-bezier(.215,.61,.355,1);
+}
+
+.button-rounded.inverted .text-roll {
+    color: #1e3264;
+}
+
+.button-rounded .text, .button-rounded .text-roll {
+    line-height: 2.625rem;
+}
+
+.button-rounded .text-roll {
+    color: #fff;
+    opacity: 0;
+    position: relative;
+    -webkit-transform: translateY(1.25rem);
+    transform: translateY(1.25rem);
+}
+
+.button-rounded .text, .button-rounded .text-roll {
+    line-height: 2.1875rem;
+    display: inline-block;
+    transition: all 350ms cubic-bezier(.215,.61,.355,1);
+}
 
