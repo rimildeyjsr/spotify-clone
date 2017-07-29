@@ -5,6 +5,41 @@ html,body {
     padding: 0;
 }
 
+.header .gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.gradient-bg.blue-pink, .gradient-bg.green-blue {
+    opacity: 0;
+    z-index: -1;
+}
+
+.gradient-bg.blue-pink.active, .gradient-bg.green-blue.active {
+    opacity: 1;
+}
+
+.gradient-bg.green-blue {
+    background: linear-gradient(145deg,#c3f0c8,#509bf5);
+}
+
+.gradient-bg.blue-pink {
+    background: linear-gradient(145deg,#509bf5,#f037a6);
+}
+
+.gradient-bg {
+    background: linear-gradient(145deg,#ffc867,#f037a6);
+    position: fixed;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1.5s cubic-bezier(.445,.05,.55,.95) 0s;
+}
+
 .header {
     position: fixed;
     display: -webkit-box;
@@ -25,6 +60,7 @@ html,body {
 
 .logo {
     width: 16rem;
+    margin-right: auto;
 }
 
 .header .logo svg {
