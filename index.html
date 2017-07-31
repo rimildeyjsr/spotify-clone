@@ -538,6 +538,14 @@
                     $('#insights-link').removeClass('active');
                 }
             });
+
+            $('.links').mouseenter(function(){
+                $(this).addClass('active');
+            });
+
+            $('.links').mouseleave(function(){
+                $(this).removeClass('active');
+            });
         });
     </script>
 </body>

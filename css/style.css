@@ -150,6 +150,7 @@ html,body {
     cursor: pointer;
     margin-top: 2.5vw;
     font-size: .75rem;
+    text-decoration: none;
 }
 
 #main,#trends,#insights{
