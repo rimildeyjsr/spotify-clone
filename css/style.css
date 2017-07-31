@@ -482,7 +482,7 @@ section .section-header h2 {
 
 .track-feature-title,.track-feature-subtitle {
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     font-style: normal;
     font-weight: 700;
     display: inline-block;
@@ -527,7 +527,7 @@ section .section-header h2 {
     width: 100%;
     margin: 0 auto;
     background-size: cover;
-    background-color: #000;
+    background-color: #fff;
     background-position: center center;
 }
 
@@ -565,7 +565,7 @@ section .section-header h2 {
     text-align: left;
     font-size: 2.1875rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
 }
 
 .right-genre {
@@ -588,7 +588,7 @@ section .section-header h2 {
 }
 
 .genre-title {
-    color: #000;
+    color: #fff;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
@@ -619,7 +619,7 @@ section .section-header h2 {
 
 .genre-percent {
     padding-left: 10px;
-    color: #000;
+    color: #fff;
 }
 
 .diversity {
@@ -636,7 +636,7 @@ section .section-header h2 {
 }
 
 .diversity-item {
-    color: #000;
+    color: #fff;
     text-align: center;
     display: flex;
     -ms-flex-direction: column;
@@ -717,7 +717,7 @@ section .section-header h2 {
 
 .insight-wrapper .insight .insight-info h2 {
     font-size: 1.125rem;
-    color: #000;
+    color: #fff;
     font-style: normal;
     font-weight: 500;
     margin-bottom: .5rem;
@@ -726,7 +726,7 @@ section .section-header h2 {
 .insight-wrapper .insight .insight-info h1 {
     font-size: 3.75rem;
     margin: 0;
-    color: #000;
+    color: #fff;
     font-weight: 700;
     line-height: 1em;
     font-style: normal;
@@ -737,7 +737,7 @@ section .section-header h2 {
     font-size: 1rem;
     max-width: 18.75rem;
     margin: .625rem 0 0 3.5vw;
-    color: #000;
+    color: #fff;
 }
 
 .insight-wrapper .insight-end {

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Spotify.me</title>
-
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/jquery-ui.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
@@ -50,16 +49,16 @@
         </div>
     </div>
     <div class="nav">
-        <a href="#" class="links">
+        <a href="#contact" class="links">
             Contact Us
         </a>
-        <a href="#" class="links">
+        <a href="#insights" class="links">
             Listening Insights
         </a>
-        <a href="#" class="links">
+        <a href="#trends" class="links">
             Streaming Habits
         </a>
-        <a href="#" class="links">
+        <a href="#main" class="links">
             Your Favourites
         </a>
     </div>
@@ -498,23 +497,23 @@
     <script>
         $(document).ready(function(){
             $(window).scroll(function(){
-                //console.log(4);
                 if ( $(document).scrollTop() < ($("#trends").offset().top)-50) {
-                    console.log(1);
                     $('#greenBlue').addClass('active');
                     $('#greenBlue1').addClass('active');
+                    $('#bluePink').removeClass('active');
+                    $('#bluePink1').removeClass('active');
                 }
                 if( $(document).scrollTop() >= ($('#trends').offset().top)-50) {
-                    console.log(2);
                     $('#greenBlue').removeClass('active');
                     $('#bluePink').removeClass('active');
                     $('#greenBlue1').removeClass('active');
                     $('#bluePink1').removeClass('active');
                 }
                 if( $(document).scrollTop() >= ($('#insights').offset().top)-50) {
-                    console.log(3);
                     $('#bluePink').addClass('active');
                     $('#bluePink1').addClass('active');
+                    $('#greenBlue').removeClass('active');
+                    $('#greenBlue1').removeClass('active');
                 }
 
             });
