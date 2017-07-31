@@ -51,15 +51,19 @@
     <div class="nav">
         <a href="#contact" class="links" id="contact-link">
             Contact Us
+            <div class="underline" id="contact-link-underline"></div>
         </a>
         <a href="#insights" class="links" id="insights-link">
             Listening Insights
+            <div class="underline" id="insights-link-underline"></div>
         </a>
         <a href="#trends" class="links" id="trends-link">
             Streaming Habits
+            <div class="underline" id="trends-link-underline"></div>
         </a>
-        <a href="#main" class="links" id="main-link">
+        <a href="#main" class="links active" id="main-link">
             Your Favourites
+            <div class="underline link-active" id="main-link-underline"></div>
         </a>
     </div>
     <section id="main">
@@ -549,18 +553,38 @@
 
 
             $("#main-link").click (function () {
-                $("html,body").animate ( {scrollTop : ($("#main").offset().top-50)}, 1500,"easeInOutQuad");
+                $("html,body").animate ( {scrollTop : ($("#main").offset().top-50)}, 1500,"easeInOutQuad",function(){
+                    $('#main-link-underline').addClass('link-active');
+                    $('#trends-link-underline').removeClass('link-active');
+                    $('#insights-link-underline').removeClass('link-active');
+                    $('#contact-link-underline').removeClass('link-active');
+                });
             });
 
             $("#trends-link").click (function () {
-                $("html,body").animate ( {scrollTop : ($("#trends").offset().top-50)}, 1500,"easeInOutQuad");
+                $("html,body").animate ( {scrollTop : ($("#trends").offset().top-50)}, 1500,"easeInOutQuad",function(){
+                    $('#trends-link-underline').addClass('link-active');
+                    $('#main-link-underline').removeClass('link-active');
+                    $('#insights-link-underline').removeClass('link-active');
+                    $('#contact-link-underline').removeClass('link-active');
+                });
             });
 
             $("#insights-link").click (function () {
-                $("html,body").animate ( {scrollTop : ($("#insights").offset().top-50)}, 1500,"easeInOutQuad");
+                $("html,body").animate ( {scrollTop : ($("#insights").offset().top-50)}, 1500,"easeInOutQuad",function(){
+                    $('#insights-link-underline').addClass('link-active');
+                    $('#main-link-underline').removeClass('link-active');
+                    $('#trends-link-underline').removeClass('link-active');
+                    $('#contact-link-underline').removeClass('link-active');
+                });
             });
             $("#contact-link").click (function () {
-                $("html,body").animate ( {scrollTop : ($("#contact").offset().top-50)}, 1500,"easeInOutQuad");
+                $("html,body").animate ( {scrollTop : ($("#contact").offset().top-50)}, 1500,"easeInOutQuad",function(){
+                    $('#contact-link-underline').addClass('link-active');
+                    $('#main-link-underline').removeClass('link-active');
+                    $('#trends-link-underline').removeClass('link-active');
+                    $('#insights-link-underline').removeClass('link-active');
+                });
             });
         });
     </script>
