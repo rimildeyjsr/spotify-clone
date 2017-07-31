@@ -49,16 +49,16 @@
         </div>
     </div>
     <div class="nav">
-        <a href="#contact" class="links">
+        <a href="#contact" class="links" id="contact-link">
             Contact Us
         </a>
-        <a href="#insights" class="links">
+        <a href="#insights" class="links" id="insights-link">
             Listening Insights
         </a>
-        <a href="#trends" class="links">
+        <a href="#trends" class="links" id="trends-link">
             Streaming Habits
         </a>
-        <a href="#main" class="links">
+        <a href="#main" class="links" id="main-link">
             Your Favourites
         </a>
     </div>
@@ -497,25 +497,46 @@
     <script>
         $(document).ready(function(){
             $(window).scroll(function(){
-                if ( $(document).scrollTop() < ($("#trends").offset().top)-50) {
+                if ( $(document).scrollTop() < ($("#trends").offset().top)-400) {
                     $('#greenBlue').addClass('active');
                     $('#greenBlue1').addClass('active');
                     $('#bluePink').removeClass('active');
                     $('#bluePink1').removeClass('active');
+                    $('#main-link').addClass('active');
+                    $('#trends-link').removeClass('active');
+                    $('#insights-link').removeClass('active');
+                    $('#contact-link').removeClass('active');
                 }
-                if( $(document).scrollTop() >= ($('#trends').offset().top)-50) {
+                if( $(document).scrollTop() >= ($('#trends').offset().top)-400) {
                     $('#greenBlue').removeClass('active');
                     $('#bluePink').removeClass('active');
                     $('#greenBlue1').removeClass('active');
                     $('#bluePink1').removeClass('active');
+                    $('#trends-link').addClass('active');
+                    $('#main-link').removeClass('active');
+                    $('#insights-link').removeClass('active');
+                    $('#contact-link').removeClass('active');
                 }
-                if( $(document).scrollTop() >= ($('#insights').offset().top)-50) {
+                if( $(document).scrollTop() >= ($('#insights').offset().top)-400) {
                     $('#bluePink').addClass('active');
                     $('#bluePink1').addClass('active');
                     $('#greenBlue').removeClass('active');
                     $('#greenBlue1').removeClass('active');
+                    $('#insights-link').addClass('active');
+                    $('#main-link').removeClass('active');
+                    $('#trends-link').removeClass('active');
+                    $('#contact-link').removeClass('active');
                 }
-
+                if( $(document).scrollTop() >= ($('#contact').offset().top)-300) {
+                    $('#bluePink').addClass('active');
+                    $('#bluePink1').addClass('active');
+                    $('#greenBlue').removeClass('active');
+                    $('#greenBlue1').removeClass('active');
+                    $('#contact-link').addClass('active');
+                    $('#main-link').removeClass('active');
+                    $('#trends-link').removeClass('active');
+                    $('#insights-link').removeClass('active');
+                }
             });
         });
     </script>
