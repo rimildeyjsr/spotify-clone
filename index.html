@@ -546,6 +546,22 @@
             $('.links').mouseleave(function(){
                 $(this).removeClass('active');
             });
+
+
+            $("#main-link").click (function () {
+                $("html,body").animate ( {scrollTop : ($("#main").offset().top-50)}, 1500,"easeInOutQuad");
+            });
+
+            $("#trends-link").click (function () {
+                $("html,body").animate ( {scrollTop : ($("#trends").offset().top-50)}, 1500,"easeInOutQuad");
+            });
+
+            $("#insights-link").click (function () {
+                $("html,body").animate ( {scrollTop : ($("#insights").offset().top-50)}, 1500,"easeInOutQuad");
+            });
+            $("#contact-link").click (function () {
+                $("html,body").animate ( {scrollTop : ($("#contact").offset().top-50)}, 1500,"easeInOutQuad");
+            });
         });
     </script>
 </body>
