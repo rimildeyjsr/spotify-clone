@@ -13,14 +13,14 @@
 <div>
     <div></div>
     <div class="gradient-wrapper">
-        <div class="gradient-bg green-blue"></div>
-        <div class="gradient-bg blue-pink"></div>
+        <div class="gradient-bg green-blue active" id="greenBlue"></div>
+        <div class="gradient-bg blue-pink" id="bluePink"></div>
         <div class="gradient-bg"></div>
     </div>
     <div class="header">
         <div class="gradient-wrapper">
-            <div class="gradient-bg green-blue"></div>
-            <div class="gradient-bg blue-pink"></div>
+            <div class="gradient-bg green-blue active" id="greenBlue1"></div>
+            <div class="gradient-bg blue-pink" id="bluePink1"></div>
             <div class="gradient-bg"></div>
         </div>
         <div class="logo">
@@ -493,8 +493,32 @@
         </div>
     </footer>
 </div>
-
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                //console.log(4);
+                if ( $(document).scrollTop() < ($("#trends").offset().top)-50) {
+                    console.log(1);
+                    $('#greenBlue').addClass('active');
+                    $('#greenBlue1').addClass('active');
+                }
+                if( $(document).scrollTop() >= ($('#trends').offset().top)-50) {
+                    console.log(2);
+                    $('#greenBlue').removeClass('active');
+                    $('#bluePink').removeClass('active');
+                    $('#greenBlue1').removeClass('active');
+                    $('#bluePink1').removeClass('active');
+                }
+                if( $(document).scrollTop() >= ($('#insights').offset().top)-50) {
+                    console.log(3);
+                    $('#bluePink').addClass('active');
+                    $('#bluePink1').addClass('active');
+                }
+
+            });
+        });
+    </script>
 </body>
 </html>
