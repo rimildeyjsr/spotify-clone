@@ -5,7 +5,7 @@
     <title>Spotify.me</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/jquery-ui.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -67,7 +67,7 @@
         </a>
     </div>
     <section id="main">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade" data-aos-duration="1000">
             <h1>Let's Start With Your Favourites</h1>
             <h2>Get ready to feel cool. Or much less cool than you thought.</h2>
         </div>
@@ -113,35 +113,10 @@
                     </div>
                 </div>
             </div>
-            <!-- add later -->
-            <div class="recent">
-                <div id="recent-top-artist" class="top-item right">
-                    <div class="item-art">
-
-                    </div>
-                    <div class="item-details">
-
-                    </div>
-                    <div class="item-bg">
-
-                    </div>
-                </div>
-                <div id="recent-top-track" class="top-item left">
-                    <div class="item-art">
-
-                    </div>
-                    <div class="item-details">
-
-                    </div>
-                    <div class="item-bg">
-
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section id="trends">
-        <div class="section-header">
+        <div class="section-header"  data-aos="fade" data-aos-duration="1000">
            <h1>Here's What You Listen </h1>
            <h2>Based on your most recent 181 streams since July 20</h2>
        </div>
@@ -312,7 +287,7 @@
         </div>
     </section>
     <section id="insights">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade" data-aos-duration="1000">
             <h1>You Are What You Stream</h1>
             <h2>
                 We're constantly learning more about people based on how they stream.
@@ -498,18 +473,23 @@
 </div>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
         $(document).ready(function(){
+
+            AOS.init();
             $(window).scroll(function(){
                 if ( $(document).scrollTop() < ($("#trends").offset().top)-400) {
                     $('#greenBlue').addClass('active');
                     $('#greenBlue1').addClass('active');
                     $('#bluePink').removeClass('active');
                     $('#bluePink1').removeClass('active');
+
                     $('#main-link').addClass('active');
                     $('#trends-link').removeClass('active');
                     $('#insights-link').removeClass('active');
                     $('#contact-link').removeClass('active');
+
                     $('#main-link-underline').addClass('link-active');
                     $('#trends-link-underline').removeClass('link-active');
                     $('#insights-link-underline').removeClass('link-active');

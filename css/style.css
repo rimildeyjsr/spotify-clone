@@ -1094,3 +1094,26 @@ footer .flex-right-home .about-button {
 footer .flex-right-home {
     text-align: right;
 }
+
+.fade-transistion {
+    animation: fade 1s ease-out forwards;
+    -webkit-animation: fade 1s ease-out forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
